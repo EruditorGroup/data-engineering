@@ -60,8 +60,8 @@ public class CHLoader extends AbstractLoader {
                 String stringVal = rs.getString(i + 1);
                 values[i] = isStringFlags[i] && stringVal != null
                         ? stringVal
-                            .replaceAll("\\|", "\\\\|")
-                            .replaceAll(this.lineSeparator, this.lineSeparatorReplacement)
+                        .replaceAll("\\|", "\\\\|")
+                        .replaceAll(this.lineSeparator, this.lineSeparatorReplacement)
                         : stringVal;
             }
 
